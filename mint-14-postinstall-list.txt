@@ -1,0 +1,45 @@
+Liste des logiciels installés:  
+
+chromium-browser chromium-browser-l10n chromium-codecs-ffmpeg-extra rssowl
+
+ubuntu-restricted-extras build-essential vim subversion gitg git git-core rabbitvcs-nautilus pidgin-plugin-pack xchat xclip zenity rkhunter unetbootin 
+
+davfs2 nfs-common smbfs terminator lsb-core gparted libnotify-bin
+
+most tree wallch goaccess glogg bleachbit ccze glances faenza-icon-theme
+
+oracle-jdk7-installer v4l2ucp
+
+ubuntu-tweak conky conky-all virtualbox fonts-cantarell fonts-linuxlibertine
+
+0ad wesnoth dosbox
+
+retext gtg geany meld sublime-text planner dia calibre gnome-pie kmymoney gramps hyphen-fr libreoffice-filter-binfilter libreoffice-help-fr libreoffice-l10n-fr libreoffice-ogltrans libreoffice-pdfimport verbiste-gnome mythes-fr backintime-gnome python-boto python-pygoocanvas ttf-mscorefonts-installer tesseract-ocr tesseract-ocr-fra tesseract-ocr-ita deja-dup filezilla klavaro
+
+htop iftop ifstat iptraf wireshark tshark arp-scan netspeed nmap netpipe-tcp chkrootkit fail2ban 
+
+audacity isomaster vlc x264 ffmpeg2theora oggvideotools istanbul shotwell mplayer hugin nautilus-image-converter nautilus-actions-extra pavucontrol shutter darktable gimp gimp-plugin-registry ogmrip transmageddon guvcview wavpack mppenc faac flac vorbis-tools faad lame nautilus-script-audio-convert cheese sound-juicer picard arista milkytracker mypaint geeqie easytag rubyripper radiotray banshee-extension-soundmenu banshee-extension-lyrics fotoxx phatch
+
+----------------------------------------------------------
+E: Impossible de trouver le paquet sublime-text
+E: Impossible de trouver le paquet glances
+E: Impossible de trouver le paquet nautilus-actions-extra
+E: Impossible de trouver le paquet rubyripper
+E: Impossible de trouver le paquet faenza-icon-theme
+E: Impossible de trouver le paquet oracle-jdk7-installer
+E: Impossible de trouver le paquet ubuntu-tweak
+----------------------------------------------------------
+ajout des repos : 
+ppa:webupd8team/themes 
+ppa:webupd8team/java 
+ppa:tualatrix/ppa (ubuntu-tweak)
+ppa:arnaud-hartmann/glances-stable 
+ppa:webupd8team/sublime-text-2 
+ppa:nae-team/ppa (extensions nautilus)
+ppa:shutter/ppa
+ppa:pmjdebruijn/darktable-release
+ppa:simonschneegans/testing (gnome-pie)
+ppa:bit-team/stable (last version of backintime)
+ppa:gtg/ppa (stable GTG)
+
+et getdeb
