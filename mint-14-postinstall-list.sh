@@ -41,11 +41,11 @@ sudo apt-get install davfs2 cifs-utils lsb-core
 sudo apt-get install build-essential vim-gnome subversion gitg zenity unetbootin terminator gparted most tree goaccess glogg bleachbit ccze virtualbox
 
 # playing (large and slow download > 30 min)
-sudo apt-get install 0ad wesnoth dosbox
+sudo apt-get install 0ad wesnoth dosbox triplea
 sudo apt-get install gnome-pie conky conky-all 
 
 # desktop apps in french
-sudo apt-get install firefox-locale-fr skype retext gtg geany meld planner dia calibre kmymoney gramps hyphen-fr libreoffice-filter-binfilter libreoffice-help-fr libreoffice-l10n-fr verbiste-gnome mythes-fr python-boto python-pygoocanvas ttf-mscorefonts-installer tesseract-ocr tesseract-ocr-fra tesseract-ocr-ita filezilla klavaro
+sudo apt-get install firefox-locale-fr skype retext gtg geany meld planner dia calibre kmymoney gramps hyphen-fr libreoffice-filter-binfilter libreoffice-help-fr libreoffice-l10n-fr verbiste-gnome mythes-fr python-boto python-pygoocanvas ttf-mscorefonts-installer tesseract-ocr tesseract-ocr-fra tesseract-ocr-ita filezilla klavaro focuswriter
 
 # network and security utlities
 sudo apt-get install undistract-me htop iftop ifstat iptraf wireshark tshark arp-scan netspeed nmap netpipe-tcp chkrootkit rkhunter
