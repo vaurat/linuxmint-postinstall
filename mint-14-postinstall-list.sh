@@ -1,6 +1,5 @@
-# add repository for : chrome
-wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
-sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
+
+# ne pas installer ubuntu-restricted-extras ubuntu-tweak 
 
 # add repository for : getdeb
 wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
@@ -10,14 +9,8 @@ sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu quantal-getdeb apps" >> /
 # add repository for : glances (non mis à jour au 20121204)
 sudo add-apt-repository ppa:arnaud-hartmann/glances-stable
 
-#add repository for : faenza icon theme
-sudo add-apt-repository ppa:tiheum/equinox
-
 #add repository for : get things gnome !
 sudo add-apt-repository ppa:gtg/ppa
-
-#add repository for : sublime text
-sudo add-apt-repository ppa:webupd8team/sublime-text-2
 
 #add repository for : Oracle Java
 sudo add-apt-repository ppa:webupd8team/java 
@@ -29,26 +22,46 @@ sudo add-apt-repository ppa:undistract-me-packagers/daily
 #packages to install first:
 sudo apt-get install nfs-common backintime-gnome git git-core
 
+# file sharing supports
+sudo apt-get install davfs2 cifs-utils
+
+########################################################
+#setup indicator sensor 
+# sudo sensors-detect est à faire 
+sudo add-apt-repository ppa:alexmurray/indicator-sensors
+sudo apt-get install indicator-sensors
+
+
+# google chrome
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
+sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
 sudo apt-get install google-chrome-stable 
+
 # non installed (yet)... sudo apt-get install oracle-jdk7-installer
 # waiting quantal package... sudo apt-get install glances
+
+#add repository for : sublime text
+sudo add-apt-repository ppa:webupd8team/sublime-text-2
 sudo apt-get install sublime-text 
+
+#add repository for : faenza icon theme
+sudo add-apt-repository ppa:tiheum/equinox
 sudo apt-get install faenza-icon-theme 
 
-# file sharing supports
-sudo apt-get install davfs2 cifs-utils lsb-core 
-
-sudo apt-get install build-essential vim-gnome subversion gitg zenity unetbootin terminator gparted most tree goaccess glogg bleachbit ccze virtualbox
+sudo apt-get install build-essential vim-gnome vim-doc subversion gitg zenity unetbootin terminator gparted most tree goaccess glogg bleachbit ccze virtualbox
 
 # playing (large and slow download > 30 min)
 sudo apt-get install 0ad wesnoth dosbox triplea
-sudo apt-get install gnome-pie conky conky-all 
 
 # desktop apps in french
-sudo apt-get install firefox-locale-fr skype retext gtg geany meld planner dia calibre kmymoney gramps hyphen-fr libreoffice-filter-binfilter libreoffice-help-fr libreoffice-l10n-fr verbiste-gnome mythes-fr python-boto python-pygoocanvas ttf-mscorefonts-installer tesseract-ocr tesseract-ocr-fra tesseract-ocr-ita filezilla klavaro focuswriter
+sudo apt-get install conky conky-all gnome-pie firefox-locale-fr skype retext gtg geany meld planner dia calibre kmymoney gramps hyphen-fr libreoffice-filter-binfilter libreoffice-help-fr libreoffice-l10n-fr verbiste-gnome mythes-fr python-boto python-pygoocanvas ttf-mscorefonts-installer tesseract-ocr tesseract-ocr-fra tesseract-ocr-ita filezilla klavaro focuswriter
+
+#undistract-me (notification for long bash commands)
+sudo add-apt-repository ppa:undistract-me-packagers/daily
+sudo apt-get install undistract-me 
 
 # network and security utlities
-sudo apt-get install undistract-me htop iftop ifstat iptraf wireshark tshark arp-scan netspeed nmap netpipe-tcp chkrootkit rkhunter
+sudo apt-get install htop iftop ifstat iptraf wireshark tshark arp-scan netspeed nmap netpipe-tcp chkrootkit rkhunter
 
 # multimedia supports 
 sudo apt-get install avidemux v4l2ucp audacity isomaster vlc x264 ffmpeg2theora oggvideotools istanbul shotwell hugin pavucontrol shutter darktable gimp gimp-plugin-registry ogmrip transmageddon guvcview wavpack mppenc faac flac vorbis-tools faad lame cheese sound-juicer picard arista milkytracker mypaint geeqie easytag radiotray banshee-extension-soundmenu banshee-extension-lyrics fotoxx phatch
@@ -63,7 +76,6 @@ sudo apt-get install avidemux v4l2ucp audacity isomaster vlc x264 ffmpeg2theora 
 #ppa:webupd8team/java 
 #ppa:tualatrix/ppa (ubuntu-tweak)
 #ppa:arnaud-hartmann/glances-stable 
-#ppa:webupd8team/sublime-text-2 
 #ppa:nae-team/ppa (extensions nautilus)
 #ppa:shutter/ppa
 #ppa:pmjdebruijn/darktable-release
@@ -73,4 +85,5 @@ sudo apt-get install avidemux v4l2ucp audacity isomaster vlc x264 ffmpeg2theora 
 
 #et getdeb
 
-# ne pas installer ubuntu-restricted-extras ubuntu-tweak 
+# which purpose ?
+#sudo apt-get install lsb-core 
