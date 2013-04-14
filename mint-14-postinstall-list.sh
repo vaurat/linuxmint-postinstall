@@ -37,7 +37,8 @@ wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-ke
 sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
 sudo apt-get install google-chrome-stable 
 
-# non installed (yet)... sudo apt-get install oracle-jdk7-installer
+# non installed (yet)... sudo apt-get install oracle-java7-installer
+# if not set : sudo update-java-alternatives -s java-7-oracle
 # waiting quantal package... sudo apt-get install glances
 
 #add repository for : sublime text
