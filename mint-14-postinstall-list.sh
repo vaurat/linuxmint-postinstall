@@ -26,7 +26,7 @@ sudo apt-get install nfs-common backintime-gnome git git-core
 sudo apt-get install davfs2 cifs-utils
 
 ########################################################
-#setup indicator sensor 
+#setup indicator sensor
 # sudo sensors-detect est à faire 
 sudo add-apt-repository ppa:alexmurray/indicator-sensors
 sudo apt-get install indicator-sensors
@@ -55,7 +55,7 @@ sudo apt-get install build-essential vim-gnome vim-doc subversion gitg zenity un
 sudo apt-get install 0ad wesnoth dosbox triplea
 
 # desktop apps in french
-sudo apt-get install conky conky-all gnome-pie firefox-locale-fr skype retext gtg geany meld planner dia calibre kmymoney gramps hyphen-fr libreoffice-filter-binfilter libreoffice-help-fr libreoffice-l10n-fr verbiste-gnome mythes-fr python-boto python-pygoocanvas ttf-mscorefonts-installer tesseract-ocr tesseract-ocr-fra tesseract-ocr-ita filezilla klavaro focuswriter
+sudo apt-get install conky conky-all gnome-pie firefox-locale-fr skype retext gtg meld planner dia calibre kmymoney gramps hyphen-fr libreoffice-filter-binfilter libreoffice-help-fr libreoffice-l10n-fr verbiste-gnome mythes-fr python-boto python-pygoocanvas ttf-mscorefonts-installer tesseract-ocr tesseract-ocr-fra tesseract-ocr-ita filezilla klavaro focuswriter
 
 #undistract-me (notification for long bash commands)
 sudo add-apt-repository ppa:undistract-me-packagers/daily
