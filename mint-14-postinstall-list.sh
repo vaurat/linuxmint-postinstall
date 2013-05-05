@@ -11,16 +11,20 @@ sudo add-apt-repository ppa:arnaud-hartmann/glances-stable
 
 #add repository for : get things gnome !
 sudo add-apt-repository ppa:gtg/ppa
+sudo install gtg 
 
 #add repository for : Oracle Java
 sudo add-apt-repository ppa:webupd8team/java 
+# non installed (yet)... sudo apt-get install oracle-java7-installer
+# if not set : sudo update-java-alternatives -s java-7-oracle
+# waiting quantal package... sudo apt-get install glances
 
 #add repository for undistract-me
 sudo add-apt-repository ppa:undistract-me-packagers/daily 
 
 ####################################################################
 #packages to install first:
-sudo apt-get install nfs-common backintime-gnome git git-core
+sudo apt-get install nfs-common backintime-gnome git git-core preload
 
 # file sharing supports
 sudo apt-get install davfs2 cifs-utils
@@ -37,10 +41,6 @@ wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-ke
 sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
 sudo apt-get install google-chrome-stable 
 
-# non installed (yet)... sudo apt-get install oracle-java7-installer
-# if not set : sudo update-java-alternatives -s java-7-oracle
-# waiting quantal package... sudo apt-get install glances
-
 #add repository for : sublime text
 sudo add-apt-repository ppa:webupd8team/sublime-text-2
 sudo apt-get install sublime-text 
@@ -55,7 +55,7 @@ sudo apt-get install build-essential vim-gnome vim-doc subversion gitg zenity un
 sudo apt-get install 0ad wesnoth dosbox triplea
 
 # desktop apps in french
-sudo apt-get install conky conky-all gnome-pie firefox-locale-fr skype retext gtg meld planner dia calibre kmymoney gramps hyphen-fr libreoffice-filter-binfilter libreoffice-help-fr libreoffice-l10n-fr verbiste-gnome mythes-fr python-boto python-pygoocanvas ttf-mscorefonts-installer tesseract-ocr tesseract-ocr-fra tesseract-ocr-ita filezilla klavaro focuswriter
+sudo apt-get install conky conky-all gnome-pie firefox-locale-fr skype retext meld planner dia calibre kmymoney gramps hyphen-fr libreoffice-filter-binfilter libreoffice-help-fr libreoffice-l10n-fr verbiste-gnome mythes-fr python-boto python-pygoocanvas ttf-mscorefonts-installer tesseract-ocr tesseract-ocr-fra tesseract-ocr-ita filezilla klavaro focuswriter
 
 #undistract-me (notification for long bash commands)
 sudo add-apt-repository ppa:undistract-me-packagers/daily
