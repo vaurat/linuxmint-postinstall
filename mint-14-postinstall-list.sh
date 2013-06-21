@@ -33,36 +33,43 @@ sudo apt-get install davfs2 cifs-utils
 #setup indicator sensor
 # sudo sensors-detect est à faire 
 sudo add-apt-repository ppa:alexmurray/indicator-sensors
-sudo apt-get install indicator-sensors
-
 
 # google chrome
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
 sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
-sudo apt-get install google-chrome-stable 
 
 #add repository for : sublime text
 sudo add-apt-repository ppa:webupd8team/sublime-text-2
-sudo apt-get install sublime-text 
 
 #add repository for : faenza icon theme
 sudo add-apt-repository ppa:tiheum/equinox
-sudo apt-get install faenza-icon-theme 
 
+#prise en charge lecteur en fat64 (exfat)
+sudo add-apt-repository ppa:relan/exfat
+
+#install des packages venant de ppas
+sudo apt-get update
+sudo apt-get install indicator-sensors
+sudo apt-get install google-chrome-stable 
+sudo apt-get install sublime-text 
+sudo apt-get install faenza-icon-theme 
+sudo apt-get install exfat-utils fuse-exfat
+
+# essentiels
 sudo apt-get install build-essential vim-gnome vim-doc subversion gitg zenity unetbootin terminator gparted most tree goaccess glogg bleachbit ccze virtualbox
 
 # playing (large and slow download > 30 min)
 sudo apt-get install 0ad wesnoth dosbox triplea
 
 # desktop apps in french
-sudo apt-get install conky conky-all gnome-pie firefox-locale-fr skype retext meld planner dia calibre kmymoney gramps hyphen-fr libreoffice-filter-binfilter libreoffice-help-fr libreoffice-l10n-fr verbiste-gnome mythes-fr python-boto python-pygoocanvas ttf-mscorefonts-installer tesseract-ocr tesseract-ocr-fra tesseract-ocr-ita filezilla klavaro focuswriter
+sudo apt-get install gtkhash conky conky-all gnome-pie firefox-locale-fr skype retext meld planner dia calibre kmymoney gramps hyphen-fr libreoffice-filter-binfilter libreoffice-help-fr libreoffice-l10n-fr verbiste-gnome mythes-fr python-boto python-pygoocanvas ttf-mscorefonts-installer tesseract-ocr tesseract-ocr-fra tesseract-ocr-ita filezilla klavaro focuswriter
 
 #undistract-me (notification for long bash commands)
 sudo add-apt-repository ppa:undistract-me-packagers/daily
 sudo apt-get install undistract-me 
 
 # network and security utlities
-sudo apt-get install htop iftop ifstat iptraf wireshark tshark arp-scan netspeed nmap netpipe-tcp chkrootkit rkhunter
+sudo apt-get install htop iftop ifstat iptraf wireshark tshark arp-scan netspeed nmap netpipe-tcp chkrootkit rkhunter remmina
 
 # multimedia supports 
 sudo apt-get install avidemux v4l2ucp audacity isomaster vlc x264 ffmpeg2theora oggvideotools istanbul shotwell hugin pavucontrol shutter darktable gimp gimp-plugin-registry ogmrip transmageddon guvcview wavpack mppenc faac flac vorbis-tools faad lame cheese sound-juicer picard arista milkytracker mypaint geeqie easytag radiotray banshee-extension-soundmenu banshee-extension-lyrics fotoxx phatch
