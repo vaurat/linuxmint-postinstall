@@ -78,7 +78,7 @@ sudo apt-get install gtkhash conky conky-all firefox-locale-fr skype retext meld
 sudo apt-get install htop iftop ifstat iptraf wireshark tshark arp-scan netspeed nmap netpipe-tcp chkrootkit rkhunter remmina
 
 # multimedia supports 
-sudo apt-get install avidemux v4l2ucp audacity isomaster vlc x264 ffmpeg2theora oggvideotools istanbul shotwell hugin pavucontrol shutter darktable gimp gimp-plugin-registry ogmrip transmageddon guvcview wavpack mppenc faac flac vorbis-tools faad lame cheese sound-juicer picard arista milkytracker mypaint geeqie easytag radiotray banshee-extension-soundmenu banshee-extension-lyrics fotoxx phatch
+sudo apt-get install avidemux v4l2ucp audacity isomaster vlc x264 ffmpeg2theora oggvideotools istanbul shotwell hugin pavucontrol shutter darktable gimp gimp-plugin-registry ogmrip transmageddon guvcview wavpack mppenc faac flac vorbis-tools faad lame cheese sound-juicer picard arista milkytracker mypaint geeqie easytag radiotray banshee fotoxx phatch
 
 # To install Sublime Package Control, open Sublime Text 2, press ctrl+` (` is the character next to 1) and paste this:
 # 
