@@ -60,7 +60,7 @@ sudo apt-get install google-chrome-stable
 sudo apt-get install davfs2
 
 # essentiels
-sudo apt-get install build-essential vim-doc subversion gitg zenity unetbootin gparted most tree goaccess glogg bleachbit ccze virtualbox
+sudo apt-get install build-essential vim-doc subversion gitg tig zenity unetbootin gparted most tree ncdu goaccess glogg bleachbit ccze virtualbox
 
 # playing (large and slow download > 30 min)
 sudo apt-get install 0ad wesnoth dosbox triplea
