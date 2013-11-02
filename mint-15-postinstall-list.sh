@@ -2,9 +2,9 @@
 # ne pas installer ubuntu-restricted-extras ubuntu-tweak 
 
 # add repository for : getdeb
-wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
-sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu quantal-getdeb games" >> /etc/apt/sources.list.d/getdeb.list'
-sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu quantal-getdeb apps" >> /etc/apt/sources.list.d/getdeb.list'
+# wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
+# sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu quantal-getdeb games" >> /etc/apt/sources.list.d/getdeb.list'
+# sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu quantal-getdeb apps" >> /etc/apt/sources.list.d/getdeb.list'
 
 # pour mise à jour de backintime 1.0.10 à 1.0.24
 sudo add-apt-repository ppa:bit-team/stable
@@ -49,7 +49,7 @@ sudo add-apt-repository ppa:relan/exfat
 
 #install des packages venant de ppas
 sudo apt-get update
-sudo apt-get install indicator-sensors
+# sudo apt-get install indicator-sensors
 sudo apt-get install sublime-text 
 sudo apt-get install exfat-utils fuse-exfat
 #sudo install gtg 
